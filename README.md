@@ -9,7 +9,7 @@ This is a simple Bash script to compile and debug AVR Assembly `.asm` files usin
 Before using the script, install the necessary tools:
 
 ```bash
-sudo apt install binutils-avr gcc-avr avr-libc gdb-avr simavr avrdude
+sudo apt install binutils-avr gcc-avr avr-libc gdb-avr simavr
 ```
 
 ## 💡 Assembly format
