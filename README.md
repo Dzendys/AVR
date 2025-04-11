@@ -27,6 +27,8 @@ end:
 .end
 ```
 
+>You can try the `example.asm` code in this repository.
+
 ## 🚀 Usage
 
 The script checks for the `.asm` extension, changes extention to `.S`, compiles it to an `.elf` binary, and starts **simavr** on `localhost:1234`.
