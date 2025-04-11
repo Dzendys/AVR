@@ -12,7 +12,7 @@ Before using the script, install the necessary tools:
 sudo apt install binutils-avr gcc-avr avr-libc gdb-avr simavr avrdude
 ```
 
-## 💡 Example Input
+## 💡 Assembly format
 Your `.asm` file should follow this format:
 
 ```asm
@@ -35,10 +35,10 @@ The script checks for the `.asm` extension, changes extention to `.S`, compiles 
 
 Then it launches **avr-gdb** with a TUI interface for debugging.
 
-> Compilation errors will abort the script.
+> Compilation errors will **abort** the script.
 
->Temporary .S and .elf files are automatically deleted when you exit the debugger.
+>Temporary `.S` and `.elf` files are automatically deleted when you exit the debugger.
 
 
 ## 📜 License
-No license. Use and modify freely. Credit is appreciated.
+No license. Use and modify freely. Credit and pull requests are appreciated.
