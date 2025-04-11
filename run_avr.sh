@@ -3,22 +3,6 @@
 # VYMRDANEJ KOMPILATOR AVR ASSEMBLER
 # by: @dzendys_
 
-# -------- REQUIREMENTS --------
-# sudo apt install binutils-avr gcc-avr avr-libc gdb-avr simavr avrdude
-# ------------------------------
-
-# ----------- EXAMPLE ----------
-# .text
-# .global main
-
-# main:
-#     ;here is your code
-# end:
-#     jmp end
-
-# .end
-# ------------------------------
-
 # ----- COMPILE AND DEBUG ------
 # check if there is an input file
 if [ -z "$1" ]; then
@@ -59,4 +43,5 @@ SIMAVR_PID=$!
 avr-gdb "$elf_file" \
   -ex "target remote localhost:1234" \
   -ex "tui enable" \
-  -ex "layout regs"
+  -ex "layout regs" \
+  -ex "source lcd_display.gdb"
