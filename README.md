@@ -51,7 +51,7 @@ main:
 
 loop:
     nop
-    rjmp loop
+    jmp loop
 
 .end
 ```

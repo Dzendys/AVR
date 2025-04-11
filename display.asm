@@ -15,6 +15,6 @@ main:
     
 loop:
     nop                ; Do nothing
-    rjmp loop          ; Infinite loop
+    jmp loop          ; Infinite loop
 
 .end
