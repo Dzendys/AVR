@@ -68,6 +68,9 @@ Then it launches **avr-gdb** with a TUI interface for debugging. Additionally, i
 
 >Temporary `.S` and `.elf` files are automatically deleted when you exit the debugger.
 
+## 📸 Screenshot
+
+![Screenshot of hello world on LCD display in gdb](hello_world.png)
 
 ## 📜 License
 No license. Use and modify freely. Credit and pull requests are appreciated.
