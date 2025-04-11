@@ -21,8 +21,10 @@ Your `.asm` file should follow this format:
 
 main:
     ; your AVR assembly code here
-end:
-    jmp end
+
+loop:
+    nop
+    jmp loop
 
 .end
 ```
