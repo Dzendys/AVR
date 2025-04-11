@@ -17,22 +17,22 @@ commands
   set $lcd13 = 32
   set $lcd14 = 32
   set $lcd15 = 32
-  set $lcd16 = 32
-  set $lcd17 = 32
-  set $lcd18 = 32
-  set $lcd19 = 32
-  set $lcd20 = 32
-  set $lcd21 = 32
-  set $lcd22 = 32
-  set $lcd23 = 32
-  set $lcd24 = 32
-  set $lcd25 = 32
-  set $lcd26 = 32
-  set $lcd27 = 32
-  set $lcd28 = 32
-  set $lcd29 = 32
-  set $lcd30 = 32
-  set $lcd31 = 32
+  set $lcd64 = 32
+  set $lcd65 = 32
+  set $lcd66 = 32
+  set $lcd67 = 32
+  set $lcd68 = 32
+  set $lcd69 = 32
+  set $lcd70 = 32
+  set $lcd71 = 32
+  set $lcd72 = 32
+  set $lcd73 = 32
+  set $lcd74 = 32
+  set $lcd75 = 32
+  set $lcd76 = 32
+  set $lcd77 = 32
+  set $lcd78 = 32
+  set $lcd79 = 32
 end
 
 # Print LCD buffer
@@ -56,22 +56,22 @@ define print_lcd
   printf "%c", $lcd14
   printf "%c", $lcd15
   printf "││\n││"
-  printf "%c", $lcd16
-  printf "%c", $lcd17
-  printf "%c", $lcd18
-  printf "%c", $lcd19
-  printf "%c", $lcd20
-  printf "%c", $lcd21
-  printf "%c", $lcd22
-  printf "%c", $lcd23
-  printf "%c", $lcd24
-  printf "%c", $lcd25
-  printf "%c", $lcd26
-  printf "%c", $lcd27
-  printf "%c", $lcd28
-  printf "%c", $lcd29
-  printf "%c", $lcd30
-  printf "%c", $lcd31
+  printf "%c", $lcd64
+  printf "%c", $lcd65
+  printf "%c", $lcd66
+  printf "%c", $lcd67
+  printf "%c", $lcd68
+  printf "%c", $lcd69
+  printf "%c", $lcd70
+  printf "%c", $lcd71
+  printf "%c", $lcd72
+  printf "%c", $lcd73
+  printf "%c", $lcd74
+  printf "%c", $lcd75
+  printf "%c", $lcd76
+  printf "%c", $lcd77
+  printf "%c", $lcd78
+  printf "%c", $lcd79
   printf "││\n"
   printf "└──────────────────┘\n\n"
 end
@@ -128,53 +128,53 @@ commands
   if $r17 == 15
     set $lcd15 = $r16
   end
-  if $r17 == 16
-    set $lcd16 = $r16
+  if $r17 == 64
+    set $lcd64 = $r16
   end
-  if $r17 == 17
-    set $lcd17 = $r16
+  if $r17 == 65
+    set $lcd65 = $r16
   end
-  if $r17 == 18
-    set $lcd18 = $r16
+  if $r17 == 66
+    set $lcd66 = $r16
   end
-  if $r17 == 19
-    set $lcd19 = $r16
+  if $r17 == 67
+    set $lcd67 = $r16
   end
-  if $r17 == 20
-    set $lcd20 = $r16
+  if $r17 == 68
+    set $lcd68 = $r16
   end
-  if $r17 == 21
-    set $lcd21 = $r16
+  if $r17 == 69
+    set $lcd69 = $r16
   end
-  if $r17 == 22
-    set $lcd22 = $r16
+  if $r17 == 70
+    set $lcd70 = $r16
   end
-  if $r17 == 23
-    set $lcd23 = $r16
+  if $r17 == 71
+    set $lcd71 = $r16
   end
-  if $r17 == 24
-    set $lcd24 = $r16
+  if $r17 == 72
+    set $lcd72 = $r16
   end
-  if $r17 == 25
-    set $lcd25 = $r16
+  if $r17 == 73
+    set $lcd73 = $r16
   end
-  if $r17 == 26
-    set $lcd26 = $r16
+  if $r17 == 74
+    set $lcd74 = $r16
   end
-  if $r17 == 27
-    set $lcd27 = $r16
+  if $r17 == 75
+    set $lcd75 = $r16
   end
-  if $r17 == 28
-    set $lcd28 = $r16
+  if $r17 == 76
+    set $lcd76 = $r16
   end
-  if $r17 == 29
-    set $lcd29 = $r16
+  if $r17 == 77
+    set $lcd77 = $r16
   end
-  if $r17 == 30
-    set $lcd30 = $r16
+  if $r17 == 78
+    set $lcd78 = $r16
   end
-  if $r17 == 31
-    set $lcd31 = $r16
+  if $r17 == 79
+    set $lcd79 = $r16
   end
   print_lcd
 end
