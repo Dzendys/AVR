@@ -36,12 +36,20 @@ fi
 trap 'kill "$SIMAVR_PID" 2>/dev/null; rm "$S_file"; rm "$elf_file"' EXIT
 
 #run server
-simavr -g -m atmega328p "$elf_file" &
+simavr -g -m atmega328p "$elf_file" > /dev/null 2>&1 &
 SIMAVR_PID=$!
 
-#debug
-avr-gdb "$elf_file" \
-  -ex "target remote localhost:1234" \
-  -ex "tui enable" \
-  -ex "layout regs" \
-  -ex "source lcd_display.gdb"
+#debug with display
+if grep -E 'init_disp|show_char|printlib\.inc' "$1" >/dev/null 2>&1; then
+    avr-gdb "$elf_file" \
+    -ex "target remote localhost:1234" \
+    -ex "tui enable" \
+    -ex "layout regs" \
+    -ex "source lcd_display.gdb"
+#debug without display
+else
+    avr-gdb "$elf_file" \
+    -ex "target remote localhost:1234" \
+    -ex "tui enable" \
+    -ex "layout regs"
+fi
