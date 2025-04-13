@@ -37,8 +37,8 @@ end
 
 # Print LCD buffer
 define print_lcd
-  printf "┌──────────────────┐\n"
-  printf "││"
+  printf "┌────────────────┐\n"
+  printf "│"
   printf "%c", $lcd0
   printf "%c", $lcd1
   printf "%c", $lcd2
@@ -55,7 +55,7 @@ define print_lcd
   printf "%c", $lcd13
   printf "%c", $lcd14
   printf "%c", $lcd15
-  printf "││\n││"
+  printf "│\n│"
   printf "%c", $lcd64
   printf "%c", $lcd65
   printf "%c", $lcd66
@@ -72,8 +72,8 @@ define print_lcd
   printf "%c", $lcd77
   printf "%c", $lcd78
   printf "%c", $lcd79
-  printf "││\n"
-  printf "└──────────────────┘\n\n"
+  printf "│\n"
+  printf "└────────────────┘\n\n"
 end
 
 # Edit LCD buffer and show
