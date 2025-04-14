@@ -1,10 +1,18 @@
 # AVR Assembly Compiler & Debugger
 
-This is a simple Bash script to compile and debug AVR Assembly `.asm` files using `avr-gcc`, `simavr`, and `avr-gdb`. It supports the **ATmega328P** microcontroller and can display the LCD output in the GDB terminal.
+This is a simple **Bash** script to compile and debug AVR Assembly `.asm` files using `avr-gcc`, `simavr`, and `avr-gdb`. It supports the **ATmega328P** microcontroller and can display the LCD output in the GDB terminal.
 
 ---
 
 ## 🛠 Requirements
+
+Clone this repository with
+
+```git
+git clone https://github.com/Dzendys/AVR.git
+```
+
+>The repository will be cloned into a subdirectory named AVR within your current terminal working directory.
 
 Before using the script, install the necessary tools:
 
