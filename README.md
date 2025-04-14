@@ -74,3 +74,32 @@ Then it launches **avr-gdb** with a TUI interface for debugging. Additionally, i
 
 ## 📜 License
 No license. Use and modify freely. Credit and pull requests are appreciated.
+
+## ❓ FAQ
+1. **Why do I need to import `printlib.inc` when it only contains a `ret` instruction?**  
+   It's required to ensure compatibility with the MPLAB library used in the **BI-SAP** course. Additionally, it serves as a "hook" for GDB, allowing you to set breakpoints and monitor the display output.
+
+2. **Why does the program stop at `show_char` when I use `continue`?**  
+   This is because a breakpoint is set in GDB at `show_char` to print the LCD display at the correct moment.
+
+3. **Why is the `printlib` so limited? And why isn’t there a separate function for saving and displaying characters on the LCD?**  
+   The `printlib` is designed to have the same interface as the one used in MPLAB for the **BI-SAP** course. This ensures compatibility with their code, which is why it's kept simple and not split into separate functions for saving and displaying characters.
+
+4. **Does the program support buttons?**  
+   No, it doesn't support buttons yet. Work is ongoing to add this feature in the future.
+
+5. **Why does the `lcd_display.gdb` script look messy?**  
+   AVR-GDB is very limited in functionality, and this is currently the most readable code that can be written given the available features.
+
+6. **Does it work on Windows?**  
+   Yes, it works on Windows through **WSL** (Windows Subsystem for Linux).
+
+7. **Why am I getting a "Compilation error" when it works in MPLAB?**  
+   This is likely because you skipped the README and didn’t realize that the sections syntax is different. For example, `.org` and other directives are not supported in the same way here. I recommend writing the code in **`example.asm`** where the sections are set up correctly.
+
+8. **Why can’t I run the script?**  
+   Make sure the script is up to date with the latest version from the repository and that it has the correct line endings (LF/CRLF).
+
+If you encounter additional errors, please report them in **Issues** or write me on **Discord** (@dzendys_).
+
+>"*MPLAB je sračka."* - Sun Tzu
