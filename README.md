@@ -60,6 +60,12 @@ The LCD display has two lines, with the first line displaying characters at posi
 
 ## 🚀 Usage
 
+Go to your terminal and type:
+
+`./run_avr.sh <your_file.asm>`
+
+> Make sure, you have execution permissions. If not, add them by `chmod u+x run_avr.sh`.
+
 The script checks for the `.asm` extension, changes extention to `.S`, compiles it to an `.elf` binary, and starts **simavr** on `localhost:1234`.
 
 Then it launches **avr-gdb** with a TUI interface for debugging. Additionally, it runs the `lcd_display.gdb` script which shows the LCD output in the GDB terminal.
